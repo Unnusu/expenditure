@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="main">
+    <p class="expen">Your Expenditures</p>
+    <div class="jumbotron"> 
+		<section class="layout">
+			<div>
+				<u><h3>Expenditure</h3></u><br>
+                {% for values in values %}
+                    <h3>{{values.expense}}</h3><br><hr>
+                {% endfor %}
+			</div>
+			<div>
+                <u><h3>price</h3></u> <br>
+                {% for values in values %}
+                    <h3>${{values.price}}</h3> <a href="{% url 'edit' id=values.id %}">edit</a>   <a href="{% url 'delete' id=values.id %}">delete</a><hr>
+                {% endfor %}
+            </div>
+		</section><br><br><br>
+        <center><a href="{% url 'add' %}" class="btn btn-primary">Add</a>
+            {%if values%}
+                <a href="{% url 'del_all' %}" class="btn btn-danger">Delete All</a></center>
+            {% endif %}
+    </div>
+    <div class="total" align="center">
+        Your Total Expenditure this Month<br><br>
+        <b>${{total}}</b>
+    </div>
+    <div><img src="{% static '/images/dog.png' %}" class="dog"></div>
+</div>
+{% endblock content %}
