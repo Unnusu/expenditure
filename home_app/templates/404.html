@@ -9,9 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static '/css/404.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/404s.css' %}">
     <title>404</title>
   </head>
-  <body background="{% static '/images/back.png' %}">
+  <body background="{% static '/images/welp.jpg' %}">
       <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -25,9 +26,13 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
         -->
 
-        <div class="rectangle">
-            <p class="error">404  Page Not Found</p>
-            <a href="{% url 'home' %}" class="btn"><h1 class="home">Go To Home</h1></a>
+        <div class="desktop-1 screen">
+          <h1 class="title">Oops!</h1>
+          <div class="it-seems-something-went-wrong">It seems something <br>went wrong.</div>
+          <div class="overlap-group">
+            <a href="{% url 'home' %}" class="rectangle-1"><div class="try-again">try again</div></a>
+
+          </div>
         </div>
   </body>
     

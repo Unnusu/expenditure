@@ -1,0 +1,131 @@
+
+
+:root {
+    --black: 
+  rgba(0, 0, 0, 1);
+    --powder-blue: 
+  rgba(177, 217, 219, 1);
+    --white-2: 
+  rgba(255, 255, 255, 0.698);
+    --white: 
+  rgba(255, 255, 255, 1);
+  
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+    --font-size-l: 32px;
+    --font-size-xxl: 64px;
+    --font-size-xxxl: 80px;
+    --font-size-xl2: 36px;
+  
+    --font-family-dancing_script: "Dancing Script";
+    --font-family-inter: "Inter";
+    --font-family-poppins: "Poppins";
+    --font-family-poppins-medium: "Poppins-Medium";
+    --font-family-poppins-semibold: "Poppins-SemiBold";
+  }
+  
+  
+  
+  .poppins-bold-black-80px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxl);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .poppins-normal-black-24px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-normal-white-24px {
+    color: var(--white);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-medium-black-24px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-medium-white-24px-2 {
+    color: var(--white-2);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .border-1px-black {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--black);
+  }
+  .poppins-bold-white-24px {
+    color: var(--white);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .inter-medium-white-64px {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xxl);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-medium-white-24px {
+    color: var(--white);
+    font-family: var(--font-family-poppins-medium);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .inter-normal-white-32px {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-semi-bold-black-24px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .poppins-semi-bold-black-24px {
+    color: var(--black);
+    font-family: var(--font-family-poppins-semibold);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .poppins-medium-white-20px {
+    color: var(--white);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-medium-white-24px {
+    color: var(--white);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .dancingscript-normal-white-36px {
+    color: var(--white);
+    font-family: var(--font-family-dancing_script);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
