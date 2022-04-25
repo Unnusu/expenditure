@@ -38,7 +38,7 @@ def delete(request,id):
 
 @login_required
 def delete_all(request):
-    values=Thestart.objects.all().delete()
+    values=Thestart.objects.all().filter(user_id= request.user.id).delete()
     return redirect('home')
 
 @login_required   
@@ -57,6 +57,8 @@ def edit(request,id):
             expense = form.cleaned_data['expense']
             price = form.cleaned_data['price']
             
-            Thestart.objects.create(expense=expense,price=price,user_id=request.user.id)
+            values.expense = expense
+            values.price = price
+            values.save()
             
             return redirect('home')

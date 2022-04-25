@@ -147,3 +147,6 @@ body{
   top: 75px;
   width: 345px;
 }
+.error{
+  color: #FF0000;
+}
